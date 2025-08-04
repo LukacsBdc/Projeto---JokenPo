@@ -2,4 +2,4 @@
 
 agora com código limpo e jogabilidade afiada. 
 
-Agora com código limpo e jogabilidade afiada. Que vença o mais rápido no clique!"
+Agora com código limpo. Que vença o mais rápido no clique!"
