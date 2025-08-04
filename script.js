@@ -20,7 +20,7 @@ const playHuman = (humanChoice) => {
 
 
 const playMachine = () => {
-    const choices = ['rock', 'paper', 'scissors']
+    const choices = [GAME_OPTIONS.ROCK, GAME_OPTIONS.PAPER, GAME_OPTIONS.SCISSORS]
     const randomNumber = Math.floor(Math.random() * 3)
 
     return choices[randomNumber]
@@ -34,9 +34,9 @@ playTheGame = (human, machine) => {
     if (human === machine) {
         result.innerHTML = "Empatou!"
     } else if (
-        (human === 'rock' && machine === 'scissors') ||
-        (human === 'paper' && machine === 'rock') ||
-        (human === 'scissors' && machine === 'paper')
+        (human === GAME_OPTIONS.ROCK && machine === GAME_OPTIONS.SCISSORS) ||
+        (human === GAME_OPTIONS.PAPER && machine === GAME_OPTIONS.ROCK) ||
+        (human === GAME_OPTIONS.SCISSORS && machine === GAME_OPTIONS.PAPER)
     ) {
         result.innerHTML = "Você ganhou!"
         hunmanScoreNumber++
